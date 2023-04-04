@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    .background {
+        padding-top: 2vh;
+        background-color: white;
+        height: 12vh;
+    }
+
+    .headerContent {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    .question {
+        background-color: #FFF5DC;
+        height: 20vh;
+    }
+
+    .questionContent {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .questionContent h2{
+        font-family: 'Roboto', sans-serif;
+        color: #1f1f1f;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 5vh;
+        text-align: left;
+    }
+
+    .places {
+        margin: 2vh 0 0 0;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .places h3 {
+        font-family: 'Roboto', sans-serif;
+        color: #1f1f1f;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 5vh;
+        text-align: left;
+    }
+
+    .backgroundReponse {
+        height: 68vh;
+    }
+
+    #mobile-list {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        height: 30vh;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    #mobile-list li {
+        width: 100%;
+    }
+    
+    .list-item {
+        padding: 10px;
+        font-size: 20px;
+        line-height: 2vh;
+    }
+
+    .place {
+        background-color: #F4F4F4;
+        border-radius: 50px;
+    }
+
+    .paire {
+        font-weight: 700;
+    }
+
+    .perso  {
+        text-align: center;
+        color: #a7a7a7;
+        font-weight: 700;
+    }
+    
+    .selected {
+        background-color: #8bbd00d6;
+    }
+
+    #arrow {
+        display: none;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #8bbd00;
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        margin-left: -5px;
+        animation: arrow-movement 1s ease-in-out infinite;
+    }
+
+    @keyframes arrow-movement {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-5px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }
